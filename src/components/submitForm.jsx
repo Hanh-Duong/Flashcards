@@ -6,7 +6,7 @@ export default function Form() {
   const [status, setStatus] = useState('typing');
 
   if (status === 'success') {
-    return <h1>Correct!</h1>
+    return <h3>Correct!</h3>
   }
 
   async function handleSubmit(e) {
@@ -27,7 +27,7 @@ export default function Form() {
 
   return (
     <>
-      <p>Write the harmony Verbs with Pronouns</p>
+      <h3>Write the harmony Verbs with Pronouns</h3>
       <button onClick={handleClick}>
       {data.pronoun[index]} 
       </button>
