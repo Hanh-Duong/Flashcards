@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { languageList } from './languageList';
 
+
 export default function ChangeCards(props) {
   const [index, setIndex] = useState(0);
   let data = languageList[props.index];
