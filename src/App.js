@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import Button from './components/Button';
 import Menubar from './components/Menubar';
-import Menu from './components/Menu';
+import ChangeCards from './components/Changecards';
+
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           This is a place where you feel more comfortable to study Finnish!
         </p>
         <Button />
-      
+
         {/*<a
           className="App-link"
           href="https://reactjs.org"
@@ -24,9 +25,17 @@ function App() {
           Learn React
         </a>*/}
       </header>
-     <body>
-
-     </body>
+      
+     <div className='body'>
+      <div class = "right-container">
+     <ChangeCards index={0} />
+     <ChangeCards index={1}/>
+     <ChangeCards index={2}/>
+     <ChangeCards index={3}/>
+     <ChangeCards index={4}/>
+     <ChangeCards index={5}/>
+     </div>
+     </div>
     </div>
   );
 }
