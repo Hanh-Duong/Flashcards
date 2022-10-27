@@ -26,7 +26,7 @@ function App() {
         </a>*/}
       </header>
       
-     <body className='body'>
+     <div className='body'>
       <div class = "right-container">
      <ChangeCards index={0} />
      <ChangeCards index={1}/>
@@ -35,7 +35,7 @@ function App() {
      <ChangeCards index={4}/>
      <ChangeCards index={5}/>
      </div>
-     </body>
+     </div>
     </div>
   );
 }
