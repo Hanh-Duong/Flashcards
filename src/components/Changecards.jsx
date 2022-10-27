@@ -30,7 +30,7 @@ const color = ["lightgreen", "lightpink", "lightblue", "lightgreen", "lightblue"
       }}>
         {data.verb[index]}
       </h1>
-      <img src={data.url[index]} style = {{width:"100px", height:"100px"}}/>
+      <img src={data.url[index]} alt = "illustration" style = {{width:"100px", height:"100px"}}/>
       <h5>{data.translate[index]}</h5>
     </div>);
 }
