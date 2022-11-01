@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { languageList } from './languageList';
-import Form from './Form';
 
 export default function ChangeCards(props) {
   const [index, setIndex] = useState(0);
@@ -33,8 +32,7 @@ const color = ["lightgreen", "lightpink", "lightblue", "lightgreen", "lightblue"
         {data.object[index]}
       </h1>
       <img src={data.url[index]} alt = "illustration" style = {{width:"100px", height:"100px"}}/>
-      <h5>{data.translate[index]}</h5>
-    
+      <h5>{data.translate[index]}</h5> 
     </div>);
 }
 /*const frontCard = ["Minä", "Sinä", "Hän", "Me", "Te", "He"]
