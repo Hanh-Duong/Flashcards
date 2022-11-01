@@ -1,10 +1,9 @@
-import logo from './logo.svg';
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 import Home from './Home';
 import Lessons from './components/Lessons';
 import Menubar from './components/Menubar';
-import Button from './components/Button';
 
 
 function App() {
