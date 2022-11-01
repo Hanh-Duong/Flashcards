@@ -1,12 +1,16 @@
 import { useState } from 'react';
+import { languageList } from './languageList';
+import {Changecards} from './Changecards';
 
 export default function Form() {
   const [answer, setAnswer] = useState('');
   const [error, setError] = useState(null);
   const [status, setStatus] = useState('typing');
-
+  
+  
+  
   if (status === 'success') {
-    return <h3>Correct!</h3>
+    return <h1>That's right!</h1>
   }
 
   async function handleSubmit(e) {
@@ -24,13 +28,13 @@ export default function Form() {
   function handleTextareaChange(e) {
     setAnswer(e.target.value);
   }
-
+  
   return (
     <>
-      <h3>Write the harmony Verbs with Pronouns</h3>
-      <button onClick={handleClick}>
-      {data.pronoun[index]} 
-      </button>
+      <h5>-------</h5>
+      <p>
+      Write the verb harmonies with the pronoun
+      </p>
       <form onSubmit={handleSubmit}>
         <textarea
           value={answer}
@@ -57,14 +61,23 @@ export default function Form() {
 function submitForm(answer) {
   // Pretend it's hitting the network.
   return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      //let shouldError = answer.toLowerCase() !== 'lima'
-      let shouldError = answer.toLowerCase() !== '{data.verb[index]}';
-      if (shouldError) {
-        reject(new Error('Try again!'));
-      } else {
-        resolve();
+    const [index, setIndex] = useState(0);
+    let data = languageList.props[index];
+    function handleClick() {
+    
+      if(index + 1 > data.pronoun.length-1){
+          setIndex (0)
+      }else{
+          setIndex (index + 1)
       }
-    }, 500);
+    }
+    setTimeout(() => {
+      let shouldError = answer.data.verb[index];
+      if (shouldError) {
+        resolve();
+      } else {
+        reject(new Error('Good guess but a wrong answer. Try again!'));
+      }
+    }, 1500);
   });
 }

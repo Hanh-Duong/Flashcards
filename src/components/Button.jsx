@@ -1,9 +1,11 @@
+import React from "react";
+import {Link} from "react-router-dom";
+
 function Button(props){
-    function handleClick(event){
-        console.log("Great! You're in!");
-        alert("Great! You're in!")}
     return (
-        <button className="button" onClick={handleClick}>Let's get started!</button>
+        <button className="button">
+                <Link to="/Lessons">Let's get started!</Link>
+            </button>
     )
 }
 export default Button;

@@ -24,12 +24,14 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.body {
+
+/*css for body*/
+.Lessons {
 background-color:purple;
-margin:-2rem;
 padding-left: 2rem;
+padding-right: 2rem;
 padding-bottom: 2rem;
-flex-direction: row;
+text-align: center;
 }
 
 .App-link {
@@ -66,20 +68,19 @@ color: blueviolet;
   background-color: rgb(255, 242, 255);
   color:grey;
   font-weight: lighter;
-  width: 250px;
-  height: 300px;
+  width: 300px;
+  height: 500px;
   padding-top: 10px;
-  margin: 2rem;
+  margin-top: 2rem;
   flex-direction: row;
   align-items: center;
 }
-.right-container{
- 
-  margin-left: 70px;
-  padding-left: 70px;
+.Lessons .right-container{
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: space-around;
  }
 @keyframes slidein {
   from {

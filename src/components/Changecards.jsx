@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { languageList } from './languageList';
-
+import Form from './Form';
 
 export default function ChangeCards(props) {
   const [index, setIndex] = useState(0);
@@ -22,16 +22,19 @@ const color = ["lightgreen", "lightpink", "lightblue", "lightgreen", "lightblue"
   return (
     <div className = "cards"> 
       <button onClick={handleClick}>
+      Next
+      </button><br></br>
       {data.pronoun[index]} 
-      </button>
       <h1 style={{
         color: data.color[index],
         
       }}>
-        {data.verb[index]}
+        {data.verb[index]}<br></br>
+        {data.object[index]}
       </h1>
       <img src={data.url[index]} alt = "illustration" style = {{width:"100px", height:"100px"}}/>
       <h5>{data.translate[index]}</h5>
+    <Form />
     </div>);
 }
 /*const frontCard = ["Minä", "Sinä", "Hän", "Me", "Te", "He"]
