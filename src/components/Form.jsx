@@ -1,6 +1,4 @@
 import { useState } from 'react';
-import { languageList } from './languageList';
-import {Changecards} from './Changecards';
 
 export default function Form() {
   const [answer, setAnswer] = useState('');
@@ -61,16 +59,7 @@ export default function Form() {
 function submitForm(answer) {
   // Pretend it's hitting the network.
   return new Promise((resolve, reject) => {
-    const [index, setIndex] = useState(0);
-    let data = languageList.props[index];
-    function handleClick() {
-    
-      if(index + 1 > data.pronoun.length-1){
-          setIndex (0)
-      }else{
-          setIndex (index + 1)
-      }
-    }
+
     setTimeout(() => {
       let shouldError = answer.data.verb[index];
       if (shouldError) {

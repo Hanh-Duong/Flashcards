@@ -16,7 +16,6 @@
 
 .App-header {
   background-color: purple;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,11 +56,10 @@ text-align: center;
   display: flex;
   flex-direction: row;
   list-style: none;
-  margin: 2rem;
   gap: 30px;
 }
 .menubar{
-background-color: none;
+background-color: purple;
 color: blueviolet;
 }
 .cards{

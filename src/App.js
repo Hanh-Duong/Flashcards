@@ -10,17 +10,10 @@ import Button from './components/Button';
 function App() {
   return (
     <div>
+      
       <Router>
-        <Menubar />
-        <div className="App">
-          <header className="App-header">
-            <img src={logo} className="logo" alt="logo" />
-            <p>
-              This is a place where you feel more comfortable to study Finnish!
-            </p>
-            <Button />
-          </header>
-        </div>
+      <Menubar />
+      <Home />
         <Routes>
           <Route path="/Home" element={<Home />}></Route>
           <Route path="/Lessons" element={<Lessons />}></Route>
