@@ -1,25 +1,16 @@
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import './App.css';
-import Home from './Home';
+import React from 'react';
+import Home from './components/Home';
 import Lessons from './components/Lessons';
-import Menubar from './components/Menubar';
-
+import Menu from './components/Menu';
+import './App.css';
 
 function App() {
   return (
     <div>
-      
-      <Router>
-      <Menubar />
+      <Menu />
       <Home />
-        <Routes>
-          <Route path="/Home" element={<Home />}></Route>
-          <Route path="/Lessons" element={<Lessons />}></Route>
-        </Routes>
-      </Router>
+      <Lessons />
     </div>
   );
 }
-
 export default App;

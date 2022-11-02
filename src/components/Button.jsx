@@ -1,11 +1,10 @@
 import React from "react";
-import {Link} from "react-router-dom";
 
-function Button(props){
+function Button(props) {
     return (
         <button className="button">
-                <Link to="/Lessons">Let's get started!</Link>
-            </button>
+            Let's get started!
+        </button>
     )
 }
 export default Button;

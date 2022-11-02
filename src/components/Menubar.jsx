@@ -7,7 +7,7 @@ function Menubar(props){
     }
     return (
         <div className="menubar">
-            <button onClick={(handleClick)}>Menu</button>
+            <button onClick={(handleClick)}>Home</button>
             {isOpen && <Menu/>}
         </div>
     )
