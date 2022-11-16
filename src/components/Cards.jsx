@@ -8,7 +8,7 @@ function Cards(props){
     return (
         <div className="menubar">
             <h1 onClick={handleClick}>Finnish</h1>
-            {isOpen && <Card/>}
+            {isOpen && <Cards/>}
         </div>
     )
 }

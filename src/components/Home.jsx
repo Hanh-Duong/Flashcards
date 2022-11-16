@@ -5,7 +5,7 @@ import Button from './Button';
 export default function Home() {
     return(
     <div className="App">
-      <header className="App-header">
+      <header className="Hero">
         <img src={logo} className="logo" alt="logo" />
         <p>
           This is a place where you feel more comfortable to study Finnish!

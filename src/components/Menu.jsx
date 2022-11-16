@@ -1,10 +1,12 @@
 import React from "react";
-function Menu (props){
+import { Link } from "react-router-dom";
+import '../App.css';
+
+function Menu(props) {
     return (
         <ul className="menu">
-            <li>About</li>
-            <li>Lessons</li>
-            <li>Account</li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/Lessons">Lessons</Link></li>
         </ul>
     );
 }
